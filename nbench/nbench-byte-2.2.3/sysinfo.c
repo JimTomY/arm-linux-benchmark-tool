@@ -1,0 +1,10 @@
+sprintf(buffer,"**System used for compilation:\n");
+output_string(buffer);
+sprintf(buffer,"**Linux ubuntu 4.15.0-112-generic #113~16.04.1-Ubuntu SMP Fri Jul 10 04:37:08 UT\n");
+output_string(buffer);
+sprintf(buffer,"**C compiler: /home/pcie/rk3399-Android7.1-sdk/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc\n");
+output_string(buffer);
+sprintf(buffer,"**libc: static\n");
+output_string(buffer);
+sprintf(buffer,"**Date of compilation: Sat Aug  1 13:10:53 CST 2020\n");
+output_string(buffer);
