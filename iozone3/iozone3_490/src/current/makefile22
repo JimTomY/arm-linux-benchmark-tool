@@ -1,0 +1,23 @@
+CC	= /home/pcie/compiling-library/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc -static
+GCC	= /home/pcie/compiling-library/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc
+CFLAGS	= -Wall -static
+ 
+ 
+linux-arm:  iozone_linux-arm.o  libbif.o libasync.o fileop_linux-arm.o pit_server.o  
+	$(CC) -O3 $(LDFLAGS) iozone_linux-arm.o libbif.o libasync.o -lrt -lpthread -o iozone  
+	$(CC) -O3 -Dlinux fileop_linux-arm.o -o fileop  
+	$(CC) -O3 -Dlinux pit_server.o -o pit_server  
+  
+iozone_linux-arm.o: iozone.c libbif.c libasync.c  
+	$(CC) -c -O3 -Dunix -DHAVE_ANSIC_C -DASYNC_IO -DHAVE_PREAD -DNAME='"linux-arm"' -DLINUX_ARM -DSHARED_MEM -Dlinux -D_LARGEFILE64_SOURCE $(CFLAGS) iozone.c -o iozone_linux-arm.o  
+	$(CC) -c -O3 -Dunix -DHAVE_ANSIC_C -DASYNC_IO -D_LARGEFILE64_SOURCE -DSHARED_MEM -Dlinux $(CFLAGS) libbif.c -o libbif.o  
+	$(CC) -c -O3 -Dunix -Dlinux -DHAVE_ANSIC_C -DASYNC_IO -D_LARGEFILE64_SOURCE $(CFLAGS) libasync.c  -o libasync.o  
+  
+fileop_linux-arm.o:  fileop.c  
+	$(GCC) -Wall -c -O3 $(CFLAGS) fileop.c -o fileop_linux-arm.o  
+  
+pit_server.o:   pit_server.c  
+	$(CC) -c  $(CFLAGS) pit_server.c  -o pit_server.o   
+      
+clean:  
+	rm -f *.o iozone fileop pit_server 

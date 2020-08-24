@@ -1,0 +1,149 @@
+#
+# This is the result template to be used for reporting Iozone runs.
+# The form is edited by the person doing the submission and 
+# is processed by a script on the web server. Please follow the
+# format described for each parameter.
+#
+#
+#
+# Number of cpus in the system = Integer in quotes.
+Number of cpus in the system =  "#"
+
+# Total amount of memory in the system = Integer in Megabytes in quotes.
+Total amount of memory in the system = "####"
+
+# Total amount of buffer cache in the system = Integer in Megabytes in quotes.
+Total amount of buffer cache in the system = "####"
+
+# Total number of disks in the system = Integer in quotes.
+Total number of disks in the system = "###"
+
+# Complete description of the layout of the disks in the system = ASCII text in quotes
+Disk layout = " "
+
+# Type of cpu = ASCII text in quotes
+Type of cpu = " "
+
+# Processor clock speed =  Integer in megahertz in quotes.
+Clock speed = "###"
+
+# Processor cache size = Integer in Kilobytes in quotes
+Processor cache size = "###"
+
+# External cache size = Integer in Kilo bytes in quotes.
+External cache size = "###"
+
+# Type of disk controllers = ASCII text in quotes
+Type of disk controllers = " "
+
+# Number of disk controllers = Integer in quotes
+Number of disk controllers = "###"
+
+# Type of disks = ASCII text in quotes
+Type of disks = " "
+
+# If using striping, include a complete description of the stripe layout
+Striping =  " "
+
+# Command line that was issued to Iozone  = ASCII text in quotes 
+Command used =  " "
+
+# Version number of Iozone used for the tests. = ASCII text in quotes.
+Version number of Iozone used for the tests = " "
+
+# Version of the Operating system = ASCII text in quotes.
+Version of the Operating system = " "
+
+# Availability dates of all software and hardware used. ASCII text in quotes.
+Availability dates of all software and hardware used = " "
+
+# Type of filesystem being used. = ASCII text in quotes.
+Type of filesystem being used = " "
+
+# Total amount of NVRAM in the system. (including the disks, disk controllers)
+# = Integer in kilobytes in quotes
+Total amount of NVRAM in the system = "###"
+
+# Date when tested  = ASCII text in quotes
+Date when tested = " "
+
+# Any other hardware used in the test. = ASCII text in quotes.
+Any other hardware used in the test = " "
+
+# Compiler options used to compile Iozone = ASCII text in quotes.
+Compiler options used to compile Iozone = " "
+
+# Options used to create the filesystems = ASCII text in quotes.
+Options used to create the filesystems = " "
+
+# Options used to mount the filesystems = ASCII text in quotes.
+Options used to mount the filesystems = " "
+
+# List of all tunables that were applied to the system = ASCII text in quotes.
+List of all tunables that were applied to the system = " "
+
+# Company name if publishing for a company = ASCII text in quotes.
+Company name if publishing for a company = " "
+
+# Name of the person that ran Iozone and their email address = ASCII text in qutoes
+Person that ran Iozone and their email address = " "
+
+#
+# NFS section. Only needed if the testing was over NFS.
+#
+#
+# Model of client = ASCII text in quotes.
+Model of client = " "
+
+# Client processor type = ASCII text in quotes.
+Client processor type = " "
+
+# Client processor clock speed = Integer in Megahertz in quotes
+Client processor clock speed = "###"
+
+# Client processor cache size = Integer in Kilobytes in quotes
+Client processor cache size = "###"
+
+# Client external cache size = Integer in Kilo bytes in quotes.
+Client external cache size = "###"
+
+# Client operating system version = ASCII text in quotes
+Client operating system version = " "
+
+# Availability dates of client = ASCII text in quotes
+Availability dates of client = " "
+
+# Version of NFS protocol used = "NFSV2" or "NFSV3"
+Version of NFS protocol used = 
+
+# Transport protocol used = "UDP" or "TCP"
+Transport protocol used =
+
+# Number of network controllers used = Integer in quotes
+Number of network controllers used = "#"
+
+# Type of network controllers used = ASCII text in quotes
+Type of network controllers used = ""
+
+# Type of network switches/hubs used = ASCII text in quotes
+Type of network switches/hubs used = ""
+
+# Client mount options used = ASCII text in quotes
+Client mount options used = " "
+
+#
+# Raw Iozone output file with the -R option enabled. ASCII text beginning with
+# RESULTS BEGIN and ending with RESULTS END text strings.
+Raw Iozone output  = 
+RESULTS BEGIN
+
+	Results go here.
+
+RESULTS END
+
+# Comments to help cover anything not covered in the above description.
+# Comments = ASCII text in quotes
+Comments = ""
+#
+#
+

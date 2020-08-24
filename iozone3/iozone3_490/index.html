@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Iozone Filesystem Benchmark</TITLE>
+<META NAME="keywords" CONTENT="Filesystem benchmark performance iozone disk IO">
+<META NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#808000" BGCOLOR="#ffffff">
+
+<P><HR></P>
+<H2 ALIGN="CENTER">IOzone Filesystem Benchmark</H2>
+<P><HR></P>
+<P><div align="center"></P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=2 WIDTH=800>
+<TR><TD WIDTH="50%" VALIGN="MIDDLE">
+<P><B>IOzone</B> is a filesystem benchmark tool. The benchmark generates and measures a variety of file operations. Iozone has been ported to many machines and runs under many operating systems. Iozone is useful for performing a broad filesystem analysis of a vendor’s computer platform. The benchmark tests file I/O performance for the following operations:</P><DIR>
+<DIR>
+
+<I><FONT SIZE=2><P>Read, write, re-read, re-write, read backwards, read strided,<BR>
+fread, fwrite, random read, pread ,mmap, aio_read, aio_write </DIR>
+</DIR>
+</I></FONT></TD>
+<TD WIDTH="50%" VALIGN="MIDDLE">
+<P><A HREF="docs/read.gif"><IMG SRC="docs/read.jpg" BORDER=0 WIDTH=400 HEIGHT=296 ALT="The HFS Normal Read graph illustrates the single stream performance of reading files in various record"></A></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"></div><div align="center"></P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=2 WIDTH=800>
+<TR><TD WIDTH="50%" VALIGN="TOP">
+<P><A HREF="docs/read_scaling.gif"><IMG SRC="docs/read_scaling.jpg" BORDER=0 WIDTH=400 HEIGHT=303 ALT="The Read Throughput Scaling graph reveals the total I/O that the system delivers to multiple processes or threads as the number of disks in a striped filesystem are varied.  Click on image for a larger view."></A></P>
+<B><P>Benchmark Features:</P>
+
+<UL>
+</B><FONT SIZE=2><LI>ANSII C source</FONT> </LI>
+<FONT SIZE=2><LI>POSIX async I/O</FONT> </LI>
+<FONT SIZE=2><LI>Mmap() file I/O</FONT> </LI>
+<FONT SIZE=2><LI>Normal file I/O</FONT> </LI>
+<FONT SIZE=2><LI>Single stream measurement</FONT> </LI>
+<FONT SIZE=2><LI>Multiple stream measurement</FONT> </LI>
+<FONT SIZE=2><LI>POSIX pthreads</FONT> </LI>
+<FONT SIZE=2><LI>Multi-process measurement</FONT> </LI>
+<FONT SIZE=2><LI>Excel importable output for graph generation</FONT> </LI>
+<FONT SIZE=2><LI>Latency plots</FONT> </LI>
+<FONT SIZE=2><LI>64bit compatible source</FONT> </LI>
+<FONT SIZE=2><LI>Large file compatible</FONT> </LI>
+<FONT SIZE=2><LI>Stonewalling in throughput tests to eliminate straggler effects</FONT> </LI>
+<FONT SIZE=2><LI>Processor cache size configurable</FONT> </LI>
+<FONT SIZE=2><LI>Selectable measurements with fsync, O_SYNC</FONT> </LI>
+<FONT SIZE=2><LI>Builds for: Linux, HP-UX, IRIX, Solaris, Windows95/98/NT, FreeBSD, OpenBSD, OSFV3, OSFV4 </UL>
+</FONT></TD>
+<TD WIDTH="50%" VALIGN="MIDDLE">
+<B><FONT SIZE=2><P>While</B> computers are typically purchased with an application in mind it is also likely that over time the application mix will change. Many vendors have enhanced their operating systems to perform well for some frequently used applications. Although this accelerates the I/O for those few applications it is also likely that the system may not perform well for other applications that were not targeted by the operating system. An example of this type of enhancement is: Database. Many operating systems vendors have tested and tuned the filesystem so it works well with databases. While the database users are happy, the other users may not be so happy as the entire system may be giving all of the system resources to the database users at the expense of all other users. As time rolls on the system administrator may decide that a few more office automation tasks could be shifted to this machine. The load may now shift from a random reader application (database) to a sequential reader. The users may discover that the machine is very slow when running this new application and become dissatisfied with the decision to purchase this platform. By using Iozone to get a broad filesystem performance coverage the buyer is much more likely to see any hot or cold spots and pick a platform and operating system that is more well balanced. </FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"></div><div align="center"></P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=2 WIDTH=800>
+<TR><TD WIDTH="50%" VALIGN="MIDDLE">
+<P><A HREF="docs/read_latency.gif"><IMG SRC="docs/read_latency.jpg" BORDER=0 WIDTH=400 HEIGHT=268 ALT="The NFS3 Read Latency graph shows the latency of 4k read operations over an NFS Version 3 filesystem mounted on a client running Iozone.  Click on image for a larger view."></A></TD>
+<TD WIDTH="50%" VALIGN="MIDDLE">
+<P><A HREF="docs/reread_latency.gif"><IMG SRC="docs/reread_latency.jpg" BORDER=0 WIDTH=400 HEIGHT=272 ALT="The NFS3 Re-read Latency graph shows the re-read latency of 4k reads over an NFS Version 3 filesystem.  One can clearly see the effects of the client side cache. Here the latencies are the same as local buffer cache latencies.  Click on image for larger view."></A></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"></div></P>
+<B><FONT SIZE=2><P>Download Documentation:</B> [ </FONT><A HREF="docs/IOzone_msword_98.doc"><FONT SIZE=2>MS Word</FONT></A><FONT SIZE=2> ] [ </FONT><A HREF="docs/IOzone_ps.gz"><FONT SIZE=2>Postscript gzip</FONT></A><FONT SIZE=2> ] [ </FONT><A HREF="docs/IOzone.htm"><FONT SIZE=2>HTML</FONT></A><FONT SIZE=2> ] </P>
+<B><P>Download Source:</B> [</FONT><A HREF="src/current/iozone3_9.tar"><FONT SIZE=2>Latest tarball</FONT></A><FONT SIZE=2>] [</FONT><A HREF="src/current"><FONT SIZE=2>Latest files</FONT></A><FONT SIZE=2>] [</FONT><A HREF="src/stable/iozone3_9.tar"><FONT SIZE=2>Stable tarball</FONT></A><FONT SIZE=2> ] [</FONT><A HREF="src/stable"><FONT SIZE=2>Stable files</FONT></A><FONT SIZE=2>]</P>
+<B><P>Questions:</B> email </FONT><A HREF="mailto:capps@technologist.com"><FONT SIZE=2>capps@technologist.com</FONT></A><FONT SIZE=2> or </FONT><A HREF="mailto:wnorcott@us.oracle.com"><FONT SIZE=2>wnorcott@us.oracle.com</FONT></A><FONT SIZE=2> </P>
+</FONT><P><HR></P>
+<FONT SIZE=2><P>Last Updated: <I>Tue Sep 14 12:54:14 EDT 1999</I> </P>
+</FONT><ADDRESS><A HREF="mailto:webmaster@iozone.org"><FONT SIZE=2>webmaster@iozone.org</FONT></A><FONT SIZE=2> </ADDRESS></FONT></BODY>
+</HTML>
